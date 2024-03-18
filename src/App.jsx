@@ -23,13 +23,13 @@ import ProgramDetail from './Components/ProgramDetail';
 function App() {
   const [trainingPrograms, setTrainingPrograms] = useState([]);
 
-  // Function to update training programs state
+  // Function to update training programs  state
   const updateTrainingPrograms = (newProgram) => {
     setTrainingPrograms(prevPrograms => [...prevPrograms, newProgram]);
   };
   return (
     <Router>
-      <Routes>
+            <Routes>
         <Route path='/' element={<Start />} />
         <Route path='/adminlogin' element={<Login />} />
         <Route path='/employee_login' element={<EmployeeLogin />} />
